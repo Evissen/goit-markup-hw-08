@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>WebStudio</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <link href="./css/main.min.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container header-container">
+                <nav class="header-nav">
+                    <a lang="en" href="./" class="logo header__logo link"
+                        >Web<span class="dark-color">Studio</span></a
+                    >
+                    <ul class="list header-nav__list">
+                        <li class="header-nav__item">
+                            <a class="header-nav__link link" href="./index.html"
+                                >Студия</a
+                            >
+                        </li>
+                        <li class="header-nav__item">
+                            <a
+                                class="header-nav__link link current"
+                                href="./portfolio.html"
+                                >Портфолио</a
+                            >
+                        </li>
+                        <li class="header-nav__item">
+                            <a class="header-nav__link link" href=""
+                                >Контакты</a
+                            >
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="list header-connect">
+                    <li>
+                        <a
+                            class="header-connect__mail link"
+                            href="mailto:info@devstudio.com"
+                        >
+                            info@devstudio.com
+                            <svg
+                                class="address-icon header-connect__mail"
+                                width="16px"
+                                height="12px"
+                            >
+                                <use
+                                    href="./images/sprite.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="header-connect__tel link"
+                            href="tel:+380961111111"
+                        >
+                            +38 096 111 11 11
+                            <svg
+                                class="address-icon header-connect__tel"
+                                width="10px"
+                                height="16px"
+                            >
+                                <use
+                                    href="./images/sprite.svg#icon-smartphone"
+                                ></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <section class="section">
+                <div class="container">
+                    <ul class="list portfolio-nav">
+                        <li class="portfolio-btn-title">
+                            <button type="button" class="portfolio-btn">
+                                Все
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-title">
+                            <button type="button" class="portfolio-btn">
+                                Веб-сайты
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-title">
+                            <button type="button" class="portfolio-btn">
+                                Приложения
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-title">
+                            <button type="button" class="portfolio-btn">
+                                Дизайн
+                            </button>
+                        </li>
+                        <li class="portfolio-btn-title">
+                            <button type="button" class="portfolio-btn">
+                                Маркетинг
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="list portfolio-main">
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio1.jpg"
+                                        alt="наши люди имеют значение"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Технокряк это современная площадка
+                                        распространения коронавируса. Компании
+                                        используют эту платформу для цифрового
+                                        шпионажа и атак на защищённые сервера
+                                        конкурентов
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">Технокряк</h3>
+                                    <p class="portfolio-title-text">Веб-сайт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio2.jpg"
+                                        alt="соревнование в баскетбол"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">
+                                        Постер New Orlean vs Golden Star
+                                    </h3>
+                                    <p class="portfolio-title-text">Дизайн</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio3.jpg"
+                                        alt="марка ресторана сиафуд"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">
+                                        Ресторан Seafood
+                                    </h3>
+                                    <p class="portfolio-title-text">
+                                        Приложение
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio4.jpg"
+                                        alt="наушники"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">
+                                        Проект Prime
+                                    </h3>
+                                    <p class="portfolio-title-text">
+                                        Маркетинг
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio5.jpg"
+                                        alt="проект boxes"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">
+                                        Проект Boxes
+                                    </h3>
+                                    <p class="portfolio-title-text">
+                                        Приложение
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        lang="en"
+                                        src="./images/portfolio/portfolio6.jpg"
+                                        alt="inspiration has no borders"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 lang="en" class="portfolio-title">
+                                        Inspiration has no Borders
+                                    </h3>
+                                    <p class="portfolio-title-text">Веб-сайт</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio7.jpg"
+                                        alt="журнал"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">
+                                        Издание Limited Edition
+                                    </h3>
+                                    <p class="portfolio-title-text">Дизайн</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        src="./images/portfolio/portfolio8.jpg"
+                                        alt="проект lab"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 class="portfolio-title">Проект LAB</h3>
+                                    <p class="portfolio-title-text">
+                                        Маркетинг
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="portfolio-main-title">
+                            <div class="portfolio-focus">
+                                <div class="portfolio-item-wrap">
+                                    <img
+                                        lang="en"
+                                        src="./images/portfolio/portfolio9.jpg"
+                                        alt="growing business"
+                                        width="370"
+                                        height="294"
+                                    />
+                                    <p class="portfolio-focus-text">
+                                        Lorem ipsum, dolor sit amet consectetur
+                                        adipisicing elit. Ratione corrupti
+                                        inventore doloremque perspiciatis
+                                        distinctio a?
+                                    </p>
+                                </div>
+                                <div class="portfolio-frame">
+                                    <h3 lang="en" class="portfolio-title">
+                                        Growing Business
+                                    </h3>
+                                    <p class="portfolio-title-text">
+                                        Приложение
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div>
+                    <a lang="en" href="./" class="footer-logo link"
+                        >Web<span class="white-color">Studio</span></a
+                    >
+                    <address class="footer-address white-color">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </address>
+                    <ul class="list">
+                        <li class="footer-connect">
+                            <a
+                                href="mailto:info@example.com"
+                                class="footer-mail link"
+                                >info@example.com</a
+                            >
+                        </li>
+                        <li class="footer-connect">
+                            <a href="tel:+380991111111" class="footer-tele link"
+                                >+38 099 111 11 11</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-join">
+                    <h3 class="footer-join-title">Присоединяйтесь</h3>
+                    <ul class="social-team social-list list">
+                        <li class="join-item">
+                            <a href="" class="join-link">
+                                <svg class="join-icon" width="20" height="20">
+                                    <use
+                                        href="./images/sprite.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-item">
+                            <a href="" class="join-link">
+                                <svg class="join-icon" width="20" height="20">
+                                    <use
+                                        href="./images/sprite.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-item">
+                            <a href="" class="join-link">
+                                <svg class="join-icon" width="20" height="20">
+                                    <use
+                                        href="./images/sprite.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="join-item">
+                            <a href="" class="join-link">
+                                <svg class="join-icon" width="20" height="20">
+                                    <use
+                                        href="./images/sprite.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-mailing">
+                    <p class="footer-mailing-text">Подпишитесь на рассылку</p>
+                    <form class="footer-mailing-field">
+                        <input
+                            type="email"
+                            class="footer-mailing-email"
+                            name="e-mail"
+                            placeholder="E-mail"
+                        />
+                        <button class="footer-subscribe-button">
+                            Подписаться
+                            <svg
+                                width="24"
+                                height="24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="footer-subscribe-icon"
+                            >
+                                <path
+                                    d="M24 0 0 13.5l7.67 2.84L19.5 5.25l-8.998 12.14.007.002-.009-.002V24l4.301-5.018L20.251 21 24 0Z"
+                                    fill="#fff"
+                                />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
