@@ -1,6 +1,10 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .section-after-hero {
     padding-bottom: 94px;
@@ -10,13 +14,23 @@
     background-color: #f5f4fa;
 }
 .section-features {
-    display: flex;
-    align-items: center;
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
 }
 .section-title {
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
     @include font(14px, bold, 1.14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
     color: var(--primary-text-color);
     margin-top: 30px;
 }
@@ -27,19 +41,33 @@
     color: var(--title-text-color);
 }
 
-.section-title-text {
-    width: 270px;
-    margin-right: 30px;
-    &:last-child {
-        margin-right: 0;
+.section-title-text:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
     }
 }
+
+.section-title-text {
+    @media screen and (min-width: 768px) {
+        margin: 15px;
+        flex-basis: calc((100% - 60px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 120px) / 4);
+        width: 270px;
+    }
+}
+
 .section-icons {
+    display: flex;
     border-radius: 4px;
     background-color: #f5f4fa;
-    width: 270px;
-    height: 120px;
-    display: flex;
     justify-content: center;
     align-items: center;
+    height: 120px;
+    padding: 25px 0;
+    @media screen and (min-width: 1200px) {
+        width: 270px;
+        height: 120px;
+    }
 }

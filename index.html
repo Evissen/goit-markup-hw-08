@@ -27,7 +27,7 @@
     <body>
         <header class="header">
             <div class="container">
-        <nav class="header-nav">
+                <nav class="header-nav">
                     <a lang="en" href="./" class="logo header__logo link"
                         >Web<span class="dark-color">Studio</span></a
                     >
@@ -53,8 +53,8 @@
                         </li>
                     </ul>
                 </nav>
-        <!-- START Mobile Menu -->
-        <button type="button" class="burger-btn" data-menu-open>
+                <!-- START Mobile Menu -->
+                <button type="button" class="burger-btn" data-menu-open>
                     <svg class="burger-btn-icon">
                         <use href="./images/sprite.svg#icon-menu-mobile"></use>
                     </svg>
@@ -68,37 +68,94 @@
                             ></use>
                         </svg>
                     </button>
+                    <div class="mobile-menu__nav">
+                        <ul class="mobile-nav">
+                            <li class="mobile-nav__item">
+                                <a
+                                    class="
+                                        mobile-nav__link
+                                        mobile-nav__link-current
+                                    "
+                                    href="./index.html"
+                                    >Студия</a
+                                >
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a
+                                    class="mobile-nav__link"
+                                    href="./portfolio.html"
+                                    >Портфолио</a
+                                >
+                            </li>
+                            <li class="mobile-nav__item">
+                                <a class="mobile-nav__link" href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-menu__connect">
+                        <ul class="mobile-connect">
+                            <li class="mobile-connect__item">
+                                <a
+                                    href="tel:+380961111111"
+                                    class="mobile-connect__tel"
+                                    >+38 096 111 11 11</a
+                                >
+                            </li>
+                            <li class="mobile-connect__item">
+                                <a
+                                    href="mailto:info@example.com"
+                                    class="mobile-connect__mail"
+                                    lang="en"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                        </ul>
+                        <ul class="mobile-social">
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link"
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link"
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link"
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li class="mobile-social__item">
+                                <a href="" class="mobile-social__link"
+                                    >LinkedIn</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-        <!-- END Mobile Menu -->
-        <!-- <ul class="list header-connect">
-                    <li>
+                <!-- END Mobile Menu -->
+                <ul class="list header-connect">
+                    <li class="header-connect__item">
                         <a
-                            class="header-connect__mail link"
+                            class="header-connect__link"
                             href="mailto:info@devstudio.com"
                         >
                             info@devstudio.com
-                            <svg
-                                class="address-icon header-connect__mail"
-                                width="16px"
-                                height="12px"
-                            >
+                            <svg class="address-icon header__mail">
                                 <use
                                     href="./images/sprite.svg#icon-envelope"
                                 ></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="header-connect__item">
                         <a
-                            class="header-connect__tel link"
+                            class="header-connect__link"
                             href="tel:+380961111111"
                         >
                             +38 096 111 11 11
-                            <svg
-                                class="address-icon header-connect__tel"
-                                width="10px"
-                                height="16px"
-                            >
+                            <svg class="address-icon header__tel">
                                 <use
                                     href="./images/sprite.svg#icon-smartphone"
                                 ></use>
@@ -107,11 +164,11 @@
                     </li>
                 </ul>
             </div>
-        </header> -->
+        </header>
 
         <main>
             <!-- HERO START -->
-            <!-- <section class="hero">
+            <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">
                         Эффективные решения для вашего бизнеса
@@ -124,9 +181,10 @@
                         Заказать услугу
                     </button>
                 </div>
-            </section> -->
+            </section>
             <!-- HERO END -->
-            <!-- <section class="section">
+            <!-- FEATURES START -->
+            <section class="section">
                 <div class="container">
                     <h2 class="visually-hidden">Наши особенности</h2>
                     <ul class="list section-features">
@@ -206,7 +264,8 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
+            <!-- FEATURES END -->
             <!-- <section class="section-after-hero">
                 <div class="container">
                     <h2 class="desc-title">Чем мы занимаемся</h2>
