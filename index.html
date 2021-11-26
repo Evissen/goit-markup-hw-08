@@ -25,9 +25,9 @@
         <link href="./css/main.min.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- <header class="header">
-            <div class="container header-container"> -->
-                <!-- <nav class="header-nav">
+        <header class="header">
+            <div class="container">
+        <nav class="header-nav">
                     <a lang="en" href="./" class="logo header__logo link"
                         >Web<span class="dark-color">Studio</span></a
                     >
@@ -52,9 +52,9 @@
                             >
                         </li>
                     </ul>
-                </nav> -->
-                <!-- START Mobile Menu -->
-                <!-- <button class="burger-btn" data-menu-open>
+                </nav>
+        <!-- START Mobile Menu -->
+        <button type="button" class="burger-btn" data-menu-open>
                     <svg class="burger-btn-icon">
                         <use href="./images/sprite.svg#icon-menu-mobile"></use>
                     </svg>
@@ -68,9 +68,9 @@
                             ></use>
                         </svg>
                     </button>
-                </div> -->
-                <!-- END Mobile Menu -->
-                <!-- <ul class="list header-connect">
+                </div>
+        <!-- END Mobile Menu -->
+        <!-- <ul class="list header-connect">
                     <li>
                         <a
                             class="header-connect__mail link"
@@ -110,20 +110,22 @@
         </header> -->
 
         <main>
-            <section class="hero">
+            <!-- HERO START -->
+            <!-- <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">
                         Эффективные решения для вашего бизнеса
                     </h1>
-                    <!-- <button
+                    <button
                         data-modal-open
                         type="button"
                         class="main-btn btn-light hero-text"
                     >
                         Заказать услугу
-                    </button> -->
+                    </button>
                 </div>
-            </section>
+            </section> -->
+            <!-- HERO END -->
             <!-- <section class="section">
                 <div class="container">
                     <h2 class="visually-hidden">Наши особенности</h2>
@@ -253,11 +255,54 @@
                     <h2 class="desc-title">Наша команда</h2>
                     <ul class="list desc-img">
                         <li class="desc-img-title desc-img-border">
-                            <img
-                                src="./images/img4.jpg"
-                                alt="фото Игоря Демьяненко"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-1-desktop.webp    1x,
+                                        ./img/team/team-1-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-1-desktop.jpg    1x,
+                                        ./img/team/team-1-desktop@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-1-tablet.webp    1x,
+                                        ./img/team/team-1-tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-1-tablet.jpg    1x,
+                                        ./img/team/team-1-tablet@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-1.webp    1x,
+                                        ./img/team/team-1@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-1.jpg    1x,
+                                        ./img/team/team-1@2x.jpg 2x
+                                    "
+                                />
+                                <img src="#" alt="фото Игоря Демьяненко" />
+                            </picture>
                             <div class="desc-person desc-white">
                                 <h3 class="desc-title-text">
                                     Игорь Демьяненко
@@ -323,11 +368,55 @@
                         </li>
 
                         <li class="desc-img-title desc-img-border">
-                            <img
-                                src="./images/img5.jpg"
-                                alt="фото Ольги Репиной"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-2-desktop.webp    1x,
+                                        ./img/team/team-2-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-2-desktop.jpg    1x,
+                                        ./img/team/team-2-desktop@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-2-tablet.webp    1x,
+                                        ./img/team/team-2-tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-2-tablet.jpg    1x,
+                                        ./img/team/team-2-tablet@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-2.webp    1x,
+                                        ./img/team/team-2@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-2.jpg    1x,
+                                        ./img/team/team-2@2x.jpg 2x
+                                    "
+                                />
+
+                                <img src="#" alt="фото Ольги Репиной" />
+                            </picture>
                             <div class="desc-person desc-white">
                                 <h3 class="desc-title-text">Ольга Репина</h3>
                                 <p lang="en" class="desc-text">
@@ -390,11 +479,54 @@
                             </div>
                         </li>
                         <li class="desc-img-title desc-img-border">
-                            <img
-                                src="./images/img6.jpg"
-                                alt="фото Николая Тарасова"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-3-desktop.webp    1x,
+                                        ./img/team/team-3-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-3-desktop.jpg    1x,
+                                        ./img/team/team-3-desktop@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-3-tablet.webp    1x,
+                                        ./img/team/team-3-tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-3-tablet.jpg    1x,
+                                        ./img/team/team-3-tablet@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-3.webp    1x,
+                                        ./img/team/team-3@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-3.jpg    1x,
+                                        ./img/team/team-3@2x.jpg 2x
+                                    "
+                                />
+                                <img src="#" alt="фото Николая Тарасова" />
+                            </picture>
                             <div class="desc-person desc-white">
                                 <h3 class="desc-title-text">Николай Тарасов</h3>
                                 <p lang="en" class="desc-text">Marketing</p>
@@ -455,11 +587,54 @@
                             </div>
                         </li>
                         <li class="desc-img-title desc-img-border">
-                            <img
-                                src="./images/img7.jpg"
-                                alt="фото Михаила Ермакова"
-                                width="270"
-                            />
+                            <picture>
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-4-desktop.webp    1x,
+                                        ./img/team/team-4-desktop@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 1200px)"
+                                    srcset="
+                                        ./img/team/team-4-desktop.jpg    1x,
+                                        ./img/team/team-4-desktop@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-4-tablet.webp    1x,
+                                        ./img/team/team-4-tablet@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(min-width: 768px)"
+                                    srcset="
+                                        ./img/team/team-4-tablet.jpg    1x,
+                                        ./img/team/team-4-tablet@2x.jpg 2x
+                                    "
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-4.webp    1x,
+                                        ./img/team/team-4@2x.webp 2x
+                                    "
+                                    type="image/webp"
+                                />
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="
+                                        ./img/team/team-4.jpg    1x,
+                                        ./img/team/team-4@2x.jpg 2x
+                                    "
+                                />
+                                <img src="#" alt="фото Михаила Ермакова" />
+                            </picture>
                             <div class="desc-person desc-white">
                                 <h3 class="desc-title-text">Михаил Ермаков</h3>
                                 <p lang="en" class="desc-text">UI Designer</p>
