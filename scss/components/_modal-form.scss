@@ -68,7 +68,10 @@
 }
 
 .modal-form-checkbox-label {
-    @include font(14px, normal, 1.71);
+    @media screen and (min-width: 1200px) {
+        @include font(14px, normal, 1.71);
+    }
+    @include font(12px, normal, 1.16);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,6 +105,7 @@
 
 .accept-policy-contract {
     color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .modal-form-button {

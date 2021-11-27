@@ -2,7 +2,7 @@
     @media screen and (max-width: 767px) {
         display: block;
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
@@ -19,7 +19,7 @@
             margin-bottom: 30px;
         }
     }
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 354px;
         margin: 15px;
     }
@@ -29,12 +29,16 @@
 }
 
 .desc-title {
-    @include font(36px, bold, 1.17);
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+        @include font(36px, bold, 1.17);
+    }
+    @include font(28px, bold, 1.17);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .desc-white {
     background-color: #ffffff;
