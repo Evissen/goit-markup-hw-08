@@ -28,7 +28,7 @@
                     <a lang="en" href="./" class="logo header__logo link"
                         >Web<span class="dark-color">Studio</span></a
                     >
-                    <ul class="list header-nav__list">
+                    <ul class="header-nav__list">
                         <li class="header-nav__item">
                             <a class="header-nav__link link" href="./index.html"
                                 >Студия</a
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <!-- END Mobile Menu -->
-                <ul class="list header-connect">
+                <ul class="header-connect">
                     <li class="header-connect__item">
                         <a
                             class="header-connect__link"
@@ -161,7 +161,7 @@
         <main>
             <section class="section">
                 <div class="container">
-                    <ul class="list portfolio-nav">
+                    <ul class="portfolio-nav">
                         <li class="portfolio-btn-title">
                             <button type="button" class="portfolio-btn">
                                 Все
@@ -188,16 +188,58 @@
                             </button>
                         </li>
                     </ul>
-                    <ul class="list portfolio-main">
+                    <ul class="portfolio-main">
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio1.jpg"
-                                        alt="наши люди имеют значение"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-1-desktop.webp    1x,
+                                                ./img/portfolio/works-1-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-1-desktop.jpg    1x,
+                                                ./img/portfolio/works-1-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-1-tablet.webp    1x,
+                                                ./img/portfolio/works-1-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-1-tablet.jpg    1x,
+                                                ./img/portfolio/works-1-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-1.webp    1x,
+                                                ./img/portfolio/works-1@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-1.jpg    1x,
+                                                ./img/portfolio/works-1@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-1" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Технокряк это современная площадка
                                         распространения коронавируса. Компании
@@ -215,12 +257,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio2.jpg"
-                                        alt="соревнование в баскетбол"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-2-desktop.webp    1x,
+                                                ./img/portfolio/works-2-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-2-desktop.jpg    1x,
+                                                ./img/portfolio/works-2-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-2-tablet.webp    1x,
+                                                ./img/portfolio/works-2-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-2-tablet.jpg    1x,
+                                                ./img/portfolio/works-2-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-2.webp    1x,
+                                                ./img/portfolio/works-2@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-2.jpg    1x,
+                                                ./img/portfolio/works-2@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-2" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -239,12 +323,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio3.jpg"
-                                        alt="марка ресторана сиафуд"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-3-desktop.webp    1x,
+                                                ./img/portfolio/works-3-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-3-desktop.jpg    1x,
+                                                ./img/portfolio/works-3-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-3-tablet.webp    1x,
+                                                ./img/portfolio/works-3-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-3-tablet.jpg    1x,
+                                                ./img/portfolio/works-3-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-3.webp    1x,
+                                                ./img/portfolio/works-3@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-3.jpg    1x,
+                                                ./img/portfolio/works-3@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-3" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -265,12 +391,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio4.jpg"
-                                        alt="наушники"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-4-desktop.webp    1x,
+                                                ./img/portfolio/works-4-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-4-desktop.jpg    1x,
+                                                ./img/portfolio/works-4-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-4-tablet.webp    1x,
+                                                ./img/portfolio/works-4-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-4-tablet.jpg    1x,
+                                                ./img/portfolio/works-4-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-4.webp    1x,
+                                                ./img/portfolio/works-4@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-4.jpg    1x,
+                                                ./img/portfolio/works-4@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-4" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -291,12 +459,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio5.jpg"
-                                        alt="проект boxes"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-5-desktop.webp    1x,
+                                                ./img/portfolio/works-5-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-5-desktop.jpg    1x,
+                                                ./img/portfolio/works-5-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-5-tablet.webp    1x,
+                                                ./img/portfolio/works-5-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-5-tablet.jpg    1x,
+                                                ./img/portfolio/works-5-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-5.webp    1x,
+                                                ./img/portfolio/works-5@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-5.jpg    1x,
+                                                ./img/portfolio/works-5@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-5" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -317,13 +527,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        lang="en"
-                                        src="./images/portfolio/portfolio6.jpg"
-                                        alt="inspiration has no borders"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-6-desktop.webp    1x,
+                                                ./img/portfolio/works-6-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-6-desktop.jpg    1x,
+                                                ./img/portfolio/works-6-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-6-tablet.webp    1x,
+                                                ./img/portfolio/works-6-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-6-tablet.jpg    1x,
+                                                ./img/portfolio/works-6-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-6.webp    1x,
+                                                ./img/portfolio/works-6@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-6.jpg    1x,
+                                                ./img/portfolio/works-6@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-6" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -342,12 +593,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio7.jpg"
-                                        alt="журнал"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-7-desktop.webp    1x,
+                                                ./img/portfolio/works-7-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-7-desktop.jpg    1x,
+                                                ./img/portfolio/works-7-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-7-tablet.webp    1x,
+                                                ./img/portfolio/works-7-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-7-tablet.jpg    1x,
+                                                ./img/portfolio/works-7-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-7.webp    1x,
+                                                ./img/portfolio/works-7@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-7.jpg    1x,
+                                                ./img/portfolio/works-7@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-7" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -366,12 +659,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        src="./images/portfolio/portfolio8.jpg"
-                                        alt="проект lab"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-8-desktop.webp    1x,
+                                                ./img/portfolio/works-8-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-8-desktop.jpg    1x,
+                                                ./img/portfolio/works-8-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-8-tablet.webp    1x,
+                                                ./img/portfolio/works-8-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-8-tablet.jpg    1x,
+                                                ./img/portfolio/works-8-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-8.webp    1x,
+                                                ./img/portfolio/works-8@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-8.jpg    1x,
+                                                ./img/portfolio/works-8@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-8" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -390,13 +725,54 @@
                         <li class="portfolio-main-title">
                             <div class="portfolio-focus">
                                 <div class="portfolio-item-wrap">
-                                    <img
-                                        lang="en"
-                                        src="./images/portfolio/portfolio9.jpg"
-                                        alt="growing business"
-                                        width="370"
-                                        height="294"
-                                    />
+                                    <picture>
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-9-desktop.webp    1x,
+                                                ./img/portfolio/works-9-desktop@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 1200px)"
+                                            srcset="
+                                                ./img/portfolio/works-9-desktop.jpg    1x,
+                                                ./img/portfolio/works-9-desktop@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-9-tablet.webp    1x,
+                                                ./img/portfolio/works-9-tablet@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(min-width: 768px)"
+                                            srcset="
+                                                ./img/portfolio/works-9-tablet.jpg    1x,
+                                                ./img/portfolio/works-9-tablet@2x.jpg 2x
+                                            "
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-9.webp    1x,
+                                                ./img/portfolio/works-9@2x.webp 2x
+                                            "
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            media="(max-width: 767px)"
+                                            srcset="
+                                                ./img/portfolio/works-9.jpg    1x,
+                                                ./img/portfolio/works-9@2x.jpg 2x
+                                            "
+                                        />
+                                        <img src="#" alt="Пример-9" />
+                                    </picture>
                                     <p class="portfolio-focus-text">
                                         Lorem ipsum, dolor sit amet consectetur
                                         adipisicing elit. Ratione corrupti
@@ -418,6 +794,7 @@
                 </div>
             </section>
         </main>
+        <!-- FOOTER START -->
         <footer class="footer">
             <div class="container footer-container">
                 <div class="footer__left">
@@ -509,6 +886,7 @@
                 </div>
             </div>
         </footer>
+        <!-- FOOTER EMD -->
         <script src="./js/menu.js"></script>
     </body>
 </html>

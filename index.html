@@ -31,7 +31,7 @@
                     <a lang="en" href="./" class="logo header__logo link"
                         >Web<span class="dark-color">Studio</span></a
                     >
-                    <ul class="list header-nav__list">
+                    <ul class="header-nav__list">
                         <li class="header-nav__item">
                             <a
                                 class="header-nav__link link current"
@@ -270,17 +270,30 @@
             <section class="section-after-hero">
                 <div class="container">
                     <h2 class="desc-title">Чем мы занимаемся</h2>
-                    <ul class="list desc-img">
+                    <ul class="desc-img">
                         <li class="desc-img-item">
                             <div class="desc-title-img">
                                 <p class="desc-text-img">
                                     ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ
                                 </p>
-                                <img
-                                    src="./images/img1.jpg"
-                                    alt="программирование и вёрстка"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./img/occupation/occ-1-desktop.webp    1x,
+                                            ./img/occupation/occ-1-desktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./img/occupation/occ-1-desktop.jpg    1x,
+                                            ./img/occupation/occ-1-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img src="#" alt="Вёрстка" />
+                                </picture>
                             </div>
                         </li>
                         <li class="desc-img-item">
@@ -288,11 +301,24 @@
                                 <p class="desc-text-img">
                                     МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ
                                 </p>
-                                <img
-                                    src="./images/img2.jpg"
-                                    alt="работа с мобильными приложениями"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./img/occupation/occ-2-desktop.webp    1x,
+                                            ./img/occupation/occ-2-desktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./img/occupation/occ-2-desktop.jpg    1x,
+                                            ./img/occupation/occ-2-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img src="#" alt="Вёрстка" />
+                                </picture>
                             </div>
                         </li>
                         <li class="desc-img-item">
@@ -300,11 +326,24 @@
                                 <p class="desc-text-img">
                                     ДИЗАЙНЕРСКИЕ РЕШЕНИЯ
                                 </p>
-                                <img
-                                    src="./images/img3.jpg"
-                                    alt="работа с цветовой гаммой"
-                                    width="370"
-                                />
+                                <picture>
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./img/occupation/occ-3-desktop.webp    1x,
+                                            ./img/occupation/occ-3-desktop@2x.webp 2x
+                                        "
+                                        type="image/webp"
+                                    />
+                                    <source
+                                        media="(min-width: 1200px)"
+                                        srcset="
+                                            ./img/occupation/occ-3-desktop.jpg    1x,
+                                            ./img/occupation/occ-3-desktop@2x.jpg 2x
+                                        "
+                                    />
+                                    <img src="#" alt="Вёрстка" />
+                                </picture>
                             </div>
                         </li>
                     </ul>
@@ -372,7 +411,7 @@
                                 <p lang="en" class="desc-text">
                                     Product Designer
                                 </p>
-                                <ul class="social-team social-list list">
+                                <ul class="social-team social-list">
                                     <li class="social-item">
                                         <a href="" class="social-link">
                                             <svg
@@ -484,7 +523,7 @@
                                 <p lang="en" class="desc-text">
                                     Frontend Developer
                                 </p>
-                                <ul class="social-team social-list list">
+                                <ul class="social-team social-list">
                                     <li class="social-item">
                                         <a href="" class="social-link">
                                             <svg
@@ -592,7 +631,7 @@
                             <div class="desc-person desc-white">
                                 <h3 class="desc-title-text">Николай Тарасов</h3>
                                 <p lang="en" class="desc-text">Marketing</p>
-                                <ul class="social-team social-list list">
+                                <ul class="social-team social-list">
                                     <li class="social-item">
                                         <a href="" class="social-link">
                                             <svg
@@ -700,7 +739,7 @@
                             <div class="desc-person desc-white">
                                 <h3 class="desc-title-text">Михаил Ермаков</h3>
                                 <p lang="en" class="desc-text">UI Designer</p>
-                                <ul class="social-team social-list list">
+                                <ul class="social-team social-list">
                                     <li class="social-item">
                                         <a href="" class="social-link">
                                             <svg
@@ -764,7 +803,7 @@
             <section class="section">
                 <div class="container">
                     <h2 class="clients-title">Постоянные клиенты</h2>
-                    <ul class="list clients">
+                    <ul class="clients">
                         <li class="logo-icon clients__item">
                             <a href="" class="clients-logo">
                                 <svg class="clients-logo-icon">
